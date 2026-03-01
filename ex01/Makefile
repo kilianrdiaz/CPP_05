@@ -1,4 +1,4 @@
-NAME    = bureaucrat
+NAME    = form
 
 CC      = c++
 CFLAGS  = -Wall -Wextra -Werror -std=c++98
@@ -8,6 +8,7 @@ SRC_DIR = src
 OBJ_DIR = obj
 
 SRCS    = $(SRC_DIR)/Bureaucrat.cpp \
+          $(SRC_DIR)/Form.cpp \
           $(SRC_DIR)/main.cpp
 
 OBJS    = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
