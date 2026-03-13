@@ -1,4 +1,4 @@
-NAME    = concreteForms
+NAME    = interns
 
 CC      = c++
 CFLAGS  = -Wall -Wextra -Werror -std=c++98
@@ -12,6 +12,7 @@ SRCS    = Bureaucrat.cpp \
           ShrubberyCreationForm.cpp \
           RobotomyRequestForm.cpp \
           PresidentialPardonForm.cpp \
+          Intern.cpp \
           main.cpp
 
 OBJS    = $(patsubst %.cpp, $(OBJ_DIR)/%.o, $(SRCS))
