@@ -42,17 +42,25 @@ void ShrubberyCreationForm::execute(const Bureaucrat &executor) const
         std::cerr << "Error: Could not create file." << std::endl;
         return;
     }
-    ofs << "          &&& &&  & &&          " << std::endl;
-    ofs << "      && &\\/&\\|& ()|/ @, &&      " << std::endl;
-    ofs << "      &\\/(/&/&||/& /_/)_&/_&     " << std::endl;
-    ofs << "   &() &\\/&|()|/&\\/ '%%' & ()   " << std::endl;
-    ofs << "  &_\\_&&_\\ |& |&&/&__%_/_& &&   " << std::endl;
-    ofs << "&&   && & &| &| /& & %% ()@ ^  &&" << std::endl;
-    ofs << " ()&_---()&\\&\\|&&-&&--%---()~   " << std::endl;
-    ofs << "      &&   \\\\|||                 " << std::endl;
-    ofs << "              |||                " << std::endl;
-    ofs << "              |||                " << std::endl;
-    ofs << "               ||                " << std::endl;
+    ofs << "       _-_        " << std::endl;
+    ofs << "    /~~   ~~\\    " << std::endl;
+    ofs << " /~~         ~~\\ " << std::endl;
+    ofs << "{               }" << std::endl;
+    ofs << " \\  _-     -_  /" << std::endl;
+    ofs << "   ~  \\\\ //  ~  " << std::endl;
+    ofs << "_- -   | | _- _  " << std::endl;
+    ofs << "  _ -  | |   -_  " << std::endl;
+    ofs << "      // \\\\      " << std::endl;
+
+    ofs << "       _-_        " << std::endl;
+    ofs << "    /~~   ~~\\    " << std::endl;
+    ofs << " /~~         ~~\\ " << std::endl;
+    ofs << "{               }" << std::endl;
+    ofs << " \\  _-     -_  /" << std::endl;
+    ofs << "   ~  \\\\ //  ~  " << std::endl;
+    ofs << "_- -   | | _- _  " << std::endl;
+    ofs << "  _ -  | |   -_  " << std::endl;
+    ofs << "      // \\\\      " << std::endl;
 
     ofs << "       _-_        " << std::endl;
     ofs << "    /~~   ~~\\    " << std::endl;

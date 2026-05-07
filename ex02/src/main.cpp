@@ -11,7 +11,7 @@ int main(void)
     std::cout << "=== SHRUBBERY CREATION FORM ===" << std::endl;
     try
     {
-        Bureaucrat bob("Bob", 145);
+        Bureaucrat bob("Bob", 1);
         ShrubberyCreationForm shrubbery("garden");
         std::cout << bob << std::endl;
         std::cout << shrubbery << std::endl;

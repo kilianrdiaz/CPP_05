@@ -27,7 +27,7 @@ AForm::~AForm(void) {}
 void AForm::beSigned(const Bureaucrat& bureaucrat)
 {
     if (bureaucrat.getGrade() > this->_signGrade)
-        throw Bureaucrat::GradeTooLowException();
+        throw AForm::GradeTooLowException();
     this->_signed = true;
 }
 
