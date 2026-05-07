@@ -18,11 +18,11 @@ class AForm
         
         AForm(void);
         AForm(const std::string name, int signGrade, int executeGrade);
+        AForm(const AForm& other);
+        AForm& operator=(const AForm& other);
         virtual ~AForm(void);
 
     public:
-        AForm(const AForm& other);
-        AForm& operator=(const AForm& other);
 
         int getSignGrade() const;
         int getExecuteGrade() const;

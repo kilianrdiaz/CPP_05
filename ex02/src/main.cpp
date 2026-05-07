@@ -69,7 +69,7 @@ int main(void)
     }
     try
     {
-        std::cout << "-- Grado insuficiente para firmar --" << std::endl;
+        std::cout << "\n-- Grado insuficiente para firmar --" << std::endl;
         Bureaucrat lowly("Lowly", 150);
         RobotomyRequestForm form("target");
         lowly.signForm(form);
@@ -80,7 +80,7 @@ int main(void)
     }
     try
     {
-        std::cout << "-- Grado insuficiente para ejecutar --" << std::endl;
+        std::cout << "\n-- Grado insuficiente para ejecutar --" << std::endl;
         Bureaucrat signer("Signer", 45);
         Bureaucrat executor("Executor", 150);
         PresidentialPardonForm form("target");
