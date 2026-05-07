@@ -2,7 +2,7 @@
 
 Bureaucrat::Bureaucrat(void) : _name("Default"), _grade(150)
 {
-    std::cout << "Bureaucrat " << this->_name << " constructed with default grade." << std::endl;
+    std::cout << "Bureaucrat " << this->_name << " constructed with lowest grade." << std::endl;
 }
 
 Bureaucrat::Bureaucrat(const std::string name, int grade) : _name(name), _grade(grade)
