@@ -11,6 +11,9 @@ SRCS    = $(SRC_DIR)/Bureaucrat.cpp \
           $(SRC_DIR)/Form.cpp \
           $(SRC_DIR)/main.cpp
 
+INCS	= $(INC_DIR)/Bureaucrat.hpp \
+		  $(INC_DIR)/Form.hpp
+
 OBJS    = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
 all: $(NAME)
@@ -18,7 +21,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp Makefile | $(OBJ_DIR)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp $(INCS) Makefile | $(OBJ_DIR)
 	$(CC) $(CFLAGS) -I$(INC_DIR) -c $< -o $@
 
 $(OBJ_DIR):
