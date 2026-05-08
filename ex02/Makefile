@@ -7,21 +7,27 @@ INC_DIR = inc
 SRC_DIR = src
 OBJ_DIR = obj
 
-SRCS    = Bureaucrat.cpp \
-          AForm.cpp \
-          ShrubberyCreationForm.cpp \
-          RobotomyRequestForm.cpp \
-          PresidentialPardonForm.cpp \
-          main.cpp
+SRCS    = $(SRC_DIR)/Bureaucrat.cpp \
+          $(SRC_DIR)/AForm.cpp \
+          $(SRC_DIR)/ShrubberyCreationForm.cpp \
+          $(SRC_DIR)/RobotomyRequestForm.cpp \
+          $(SRC_DIR)/PresidentialPardonForm.cpp \
+          $(SRC_DIR)/main.cpp
 
-OBJS    = $(patsubst %.cpp, $(OBJ_DIR)/%.o, $(SRCS))
+INCS	=	$(INC_DIR)/Bureaucrat.hpp \
+			$(INC_DIR)/AForm.hpp \
+			$(INC_DIR)/ShrubberyCreationForm.hpp \
+			$(INC_DIR)/RobotomyRequestForm.hpp \
+			$(INC_DIR)/PresidentialPardonForm.hpp
+
+OBJS    = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp Makefile | $(OBJ_DIR)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp $(INCS) Makefile | $(OBJ_DIR)
 	$(CC) $(CFLAGS) -I$(INC_DIR) -c $< -o $@
 
 $(OBJ_DIR):
